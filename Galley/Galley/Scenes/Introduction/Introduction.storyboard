@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Introduction View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="IntroductionViewController" customModule="Galley" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCL-kW-Rvp">
+                                <rect key="frame" x="167.66666666666666" y="734.33333333333337" width="58" height="51.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Back" image="ic_back"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_back" imagePlacement="top" title="Back">
+                                    <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="handleBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zBB-o4-o2G"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAQ-5v-OvK">
+                                <rect key="frame" x="16" y="288" width="361" height="276"/>
+                                <mutableString key="text">Our app is the simplest way to check if you have any dead pixels on your screen. Our dead pixel test app is an easy and convenient way for you to check if your screen has dead pixels. Our test will display various colors and patterns on your screen, allowing you to identify any dead pixels that may be present.
+
+How to use:
+
+Make sure your screen is as clean as can be. If it is not, you might mistake dust or dirt for a dead pixel. To prepare your screen to be tested for dead pixels, grab a piece of soft cloth, preferably a high-density one. Then, gently and carefully rub every inch of your screen and make sure it is crystal clear.
+
+Click on the test-button to start testing your screen for dead pixels.
+
+Click on the "Got it" button then you end up testing your display.</mutableString>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="#0A1837"/>
+                        <constraints>
+                            <constraint firstItem="bAQ-5v-OvK" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="39F-A0-AMa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="oCL-kW-Rvp" secondAttribute="bottom" constant="32" id="88t-pD-FoI"/>
+                            <constraint firstItem="oCL-kW-Rvp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bAQ-5v-OvK" secondAttribute="bottom" constant="16" id="DhB-J3-aAH"/>
+                            <constraint firstItem="bAQ-5v-OvK" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="FUj-H2-m4E"/>
+                            <constraint firstItem="bAQ-5v-OvK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="Fye-gS-uQc"/>
+                            <constraint firstItem="oCL-kW-Rvp" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="OBp-ig-Kbw"/>
+                            <constraint firstItem="bAQ-5v-OvK" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="16" id="nEx-sY-DUN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_back" width="34" height="23"/>
+        <namedColor name="#0A1837">
+            <color red="0.039000000804662704" green="0.093999996781349182" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

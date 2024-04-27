@@ -10,6 +10,10 @@ import Device
 
 final class MainViewController: UIViewController {
     
+    @IBOutlet weak var introductionView: UIView!
+    @IBOutlet weak var colorTestView: UIView!
+    @IBOutlet weak var textTestView: UIView!
+    @IBOutlet weak var msTestView: UIView!
     @IBOutlet weak var deviceLabel: UILabel!
     @IBOutlet weak var iOSVersionLabel: UILabel!
     @IBOutlet weak var screenSizeLabel: UILabel!
@@ -29,13 +33,47 @@ final class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
+        setupGesture()
     }
     
     private func setupView() {
+        navigationController?.navigationBar.isHidden = true
         let device = UIDevice.current
         iOSVersionLabel.text = device.systemVersion
         getDeviceSize()
         getDeviceVersion()
+    }
+    
+    private func setupGesture() {
+        let msTap = UITapGestureRecognizer(target: self, action: #selector(handleMSTestTapped))
+        msTestView.addGestureRecognizer(msTap)
+        
+        let textTap = UITapGestureRecognizer(target: self, action: #selector(handleTextTestTapped))
+        textTestView.addGestureRecognizer(textTap)
+        
+        let colorTap = UITapGestureRecognizer(target: self, action: #selector(handleColorTestTapped))
+        colorTestView.addGestureRecognizer(colorTap)
+        
+        let introTap = UITapGestureRecognizer(target: self, action: #selector(handleIntroductionTapped))
+        introductionView.addGestureRecognizer(introTap)
+    }
+    
+    
+    @objc private func handleIntroductionTapped() {
+        let vc = IntroductionViewController.initiation()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc private func handleTextTestTapped() {
+        
+    }
+    
+    @objc private func handleColorTestTapped() {
+        
+    }
+    
+    @objc private func handleMSTestTapped() {
+        
     }
     
     func getDeviceVersion() {
