@@ -29,6 +29,13 @@
 		CEF4DED92BDCFD12002DB4E9 /* TextTestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEF4DED72BDCFD12002DB4E9 /* TextTestTableViewCell.xib */; };
 		CEF4DEDB2BDCFEF1002DB4E9 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4DEDA2BDCFEF1002DB4E9 /* Reusable.swift */; };
 		CEF4DEDD2BDCFF3B002DB4E9 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4DEDC2BDCFF3B002DB4E9 /* UITableView+.swift */; };
+		CEF4DEE02BDD3EB0002DB4E9 /* ColorTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4DEDF2BDD3EB0002DB4E9 /* ColorTestViewController.swift */; };
+		CEF4DEE22BDD3EBC002DB4E9 /* ColorTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF4DEE12BDD3EBC002DB4E9 /* ColorTest.storyboard */; };
+		CEF4DEE42BDD45B6002DB4E9 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4DEE32BDD45B6002DB4E9 /* UIColor+.swift */; };
+		CEF4DEE62BDD50DB002DB4E9 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4DEE52BDD50DB002DB4E9 /* UIButton+.swift */; };
+		CEF4DEE82BDD5305002DB4E9 /* ColorTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4DEE72BDD5305002DB4E9 /* ColorTestModel.swift */; };
+		CEF4DEEB2BDD545E002DB4E9 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4DEEA2BDD545E002DB4E9 /* ColorViewController.swift */; };
+		CEF4DEED2BDD5466002DB4E9 /* Color.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF4DEEC2BDD5466002DB4E9 /* Color.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +62,13 @@
 		CEF4DED72BDCFD12002DB4E9 /* TextTestTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextTestTableViewCell.xib; sourceTree = "<group>"; };
 		CEF4DEDA2BDCFEF1002DB4E9 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		CEF4DEDC2BDCFF3B002DB4E9 /* UITableView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		CEF4DEDF2BDD3EB0002DB4E9 /* ColorTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTestViewController.swift; sourceTree = "<group>"; };
+		CEF4DEE12BDD3EBC002DB4E9 /* ColorTest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorTest.storyboard; sourceTree = "<group>"; };
+		CEF4DEE32BDD45B6002DB4E9 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		CEF4DEE52BDD50DB002DB4E9 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		CEF4DEE72BDD5305002DB4E9 /* ColorTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTestModel.swift; sourceTree = "<group>"; };
+		CEF4DEEA2BDD545E002DB4E9 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		CEF4DEEC2BDD5466002DB4E9 /* Color.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Color.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +126,8 @@
 		CEC9AF932BDBEB2800BE4056 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				CEF4DEE92BDD5451002DB4E9 /* Color */,
+				CEF4DEDE2BDD3E90002DB4E9 /* ColorTest */,
 				CEF4DED02BDCFBFD002DB4E9 /* TextTest */,
 				CEF4DECB2BDC8AE8002DB4E9 /* Introduction */,
 				CEC9AF942BDBEB3400BE4056 /* Main */,
@@ -133,6 +149,8 @@
 			children = (
 				CEC9AF962BDBEED500BE4056 /* UIView+.swift */,
 				CEF4DEDC2BDCFF3B002DB4E9 /* UITableView+.swift */,
+				CEF4DEE32BDD45B6002DB4E9 /* UIColor+.swift */,
+				CEF4DEE52BDD50DB002DB4E9 /* UIButton+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -184,6 +202,25 @@
 				CEF4DED72BDCFD12002DB4E9 /* TextTestTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		CEF4DEDE2BDD3E90002DB4E9 /* ColorTest */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4DEE72BDD5305002DB4E9 /* ColorTestModel.swift */,
+				CEF4DEDF2BDD3EB0002DB4E9 /* ColorTestViewController.swift */,
+				CEF4DEE12BDD3EBC002DB4E9 /* ColorTest.storyboard */,
+			);
+			path = ColorTest;
+			sourceTree = "<group>";
+		};
+		CEF4DEE92BDD5451002DB4E9 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				CEF4DEEA2BDD545E002DB4E9 /* ColorViewController.swift */,
+				CEF4DEEC2BDD5466002DB4E9 /* Color.storyboard */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEF4DECF2BDC8C9B002DB4E9 /* Introduction.storyboard in Resources */,
+				CEF4DEE22BDD3EBC002DB4E9 /* ColorTest.storyboard in Resources */,
+				CEF4DEED2BDD5466002DB4E9 /* Color.storyboard in Resources */,
 				CEC9AFA12BDBF31300BE4056 /* Inter-Light.ttf in Resources */,
 				CEF4DED92BDCFD12002DB4E9 /* TextTestTableViewCell.xib in Resources */,
 				CEC9AFA02BDBF31300BE4056 /* Inter-MediumItalic.ttf in Resources */,
@@ -276,8 +315,13 @@
 				CEF4DED22BDCFC0D002DB4E9 /* TextTestViewController.swift in Sources */,
 				CEC9AF972BDBEED500BE4056 /* UIView+.swift in Sources */,
 				CEF4DEDD2BDCFF3B002DB4E9 /* UITableView+.swift in Sources */,
+				CEF4DEEB2BDD545E002DB4E9 /* ColorViewController.swift in Sources */,
+				CEF4DEE42BDD45B6002DB4E9 /* UIColor+.swift in Sources */,
+				CEF4DEE02BDD3EB0002DB4E9 /* ColorTestViewController.swift in Sources */,
 				CEC9AF842BDBE97600BE4056 /* MainViewController.swift in Sources */,
+				CEF4DEE62BDD50DB002DB4E9 /* UIButton+.swift in Sources */,
 				CEF4DEDB2BDCFEF1002DB4E9 /* Reusable.swift in Sources */,
+				CEF4DEE82BDD5305002DB4E9 /* ColorTestModel.swift in Sources */,
 				CEC9AF802BDBE97600BE4056 /* AppDelegate.swift in Sources */,
 				CEF4DED82BDCFD12002DB4E9 /* TextTestTableViewCell.swift in Sources */,
 				49E12BAB2BDCA4CB004A5A52 /* Fraction.swift in Sources */,

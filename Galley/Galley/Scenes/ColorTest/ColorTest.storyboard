@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Color Test View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ColorTestViewController" id="Y6W-OH-hqX" customClass="ColorTestViewController" customModule="Galley" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Tcx-OA-OnK">
+                                <rect key="frame" x="16" y="245.66666666666663" width="361" height="361"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bAV-Cg-CCH">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="109.66666666666667"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avn-OD-P9L">
+                                                <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="109.66666666666667"/>
+                                                <color key="backgroundColor" name="#FE0000"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="avn-OD-P9L" secondAttribute="height" multiplier="1:1" id="sP2-aj-Pfv"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleColorButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Cs4-ah-zmU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHB-KU-12Q">
+                                                <rect key="frame" x="125.66666666666666" y="0.0" width="109.66666666666666" height="109.66666666666667"/>
+                                                <color key="backgroundColor" name="#00FF01"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="GHB-KU-12Q" secondAttribute="height" multiplier="1:1" id="Qgv-pF-iDR"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleColorButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QMO-LT-X4l"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pw1-Cl-FNu">
+                                                <rect key="frame" x="251.33333333333329" y="0.0" width="109.66666666666666" height="109.66666666666667"/>
+                                                <color key="backgroundColor" name="#0000FE"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="pw1-Cl-FNu" secondAttribute="height" multiplier="1:1" id="HSo-pU-q8K"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleColorButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pEB-VT-Nsz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="pw1-Cl-FNu" firstAttribute="width" secondItem="pw1-Cl-FNu" secondAttribute="height" multiplier="1:1" id="gG6-pa-EYp"/>
+                                            <constraint firstItem="GHB-KU-12Q" firstAttribute="width" secondItem="GHB-KU-12Q" secondAttribute="height" multiplier="1:1" id="sOe-88-HME"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zWl-CS-Uqq">
+                                        <rect key="frame" x="0.0" y="125.66666666666666" width="361" height="109.66666666666666"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RCL-4N-GM6">
+                                                <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="109.66666666666667"/>
+                                                <color key="backgroundColor" name="#FFFF01"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="RCL-4N-GM6" secondAttribute="height" multiplier="1:1" id="dWM-OT-3xb"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleColorButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="t1s-0q-mJr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rg3-nt-Dvj">
+                                                <rect key="frame" x="125.66666666666666" y="0.0" width="109.66666666666666" height="109.66666666666667"/>
+                                                <color key="backgroundColor" name="#01FFFF"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Rg3-nt-Dvj" secondAttribute="height" multiplier="1:1" id="nLg-EL-X6X"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleColorButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Osy-Tt-Dnf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVZ-ka-zue">
+                                                <rect key="frame" x="251.33333333333329" y="0.0" width="109.66666666666666" height="109.66666666666667"/>
+                                                <color key="backgroundColor" name="#FF00FE"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="XVZ-ka-zue" secondAttribute="height" multiplier="1:1" id="Tpr-fc-OKZ"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleColorButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HxZ-7C-3o2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Rg3-nt-Dvj" firstAttribute="width" secondItem="Rg3-nt-Dvj" secondAttribute="height" multiplier="1:1" id="8Nq-Zn-nFH"/>
+                                            <constraint firstItem="XVZ-ka-zue" firstAttribute="width" secondItem="XVZ-ka-zue" secondAttribute="height" multiplier="1:1" id="XMk-bE-Zss"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="cp3-eZ-Hzd">
+                                        <rect key="frame" x="0.0" y="251.33333333333334" width="361" height="109.66666666666666"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSY-aB-zxi">
+                                                <rect key="frame" x="0.0" y="0.0" width="109.66666666666667" height="109.66666666666667"/>
+                                                <color key="backgroundColor" name="#010101"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="CSY-aB-zxi" secondAttribute="height" multiplier="1:1" id="GOe-14-Dy8"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleColorButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Nif-ZV-8la"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osK-mV-BYY">
+                                                <rect key="frame" x="125.66666666666666" y="0.0" width="109.66666666666666" height="109.66666666666667"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="osK-mV-BYY" secondAttribute="height" multiplier="1:1" id="60Z-Jg-HQt"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleColorButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="VZb-8Q-hfJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lce-Wl-wXt">
+                                                <rect key="frame" x="251.33333333333329" y="0.0" width="109.66666666666666" height="109.66666666666667"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Lce-Wl-wXt" secondAttribute="height" multiplier="1:1" id="bb0-jI-ahd"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="handleColorButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1sn-DR-AEl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Lce-Wl-wXt" firstAttribute="width" secondItem="Lce-Wl-wXt" secondAttribute="height" multiplier="1:1" id="oxd-UG-A0Z"/>
+                                            <constraint firstItem="osK-mV-BYY" firstAttribute="width" secondItem="osK-mV-BYY" secondAttribute="height" multiplier="1:1" id="tMq-2E-Do1"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7F5-YP-DkB">
+                                <rect key="frame" x="167.66666666666666" y="734.33333333333337" width="58" height="51.666666666666629"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_back" imagePlacement="top" title="Back">
+                                    <fontDescription key="titleFontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="handleBackButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Y0I-oh-waj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="#0A1837"/>
+                        <constraints>
+                            <constraint firstItem="Tcx-OA-OnK" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="MyQ-vD-6Kw"/>
+                            <constraint firstItem="7F5-YP-DkB" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="O6b-ti-CNO"/>
+                            <constraint firstItem="Tcx-OA-OnK" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="VMl-gR-NGD"/>
+                            <constraint firstItem="Tcx-OA-OnK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="l0p-M6-ana"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="7F5-YP-DkB" secondAttribute="bottom" constant="32" id="rFf-lU-g7M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gradientButton" destination="Lce-Wl-wXt" id="RTf-Dt-NEz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_back" width="34" height="23"/>
+        <namedColor name="#0000FE">
+            <color red="0.0" green="0.0" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#00FF01">
+            <color red="0.0" green="1" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#010101">
+            <color red="0.0039215686274509803" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#01FFFF">
+            <color red="0.0039215686274509803" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#0A1837">
+            <color red="0.039000000804662704" green="0.093999996781349182" blue="0.21600000560283661" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="#FE0000">
+            <color red="0.99607843137254903" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#FF00FE">
+            <color red="1" green="0.0" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="#FFFF01">
+            <color red="1" green="1" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
