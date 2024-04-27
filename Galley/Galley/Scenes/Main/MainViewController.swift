@@ -73,7 +73,8 @@ final class MainViewController: UIViewController {
     }
     
     @objc private func handleTextTestTapped() {
-        
+        let vc = TextTestViewController.instantiate()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc private func handleColorTestTapped() {
