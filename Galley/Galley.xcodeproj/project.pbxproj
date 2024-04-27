@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49E12BAB2BDCA4CB004A5A52 /* Fraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E12BAA2BDCA4CB004A5A52 /* Fraction.swift */; };
 		CEC9AF802BDBE97600BE4056 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9AF7F2BDBE97600BE4056 /* AppDelegate.swift */; };
 		CEC9AF842BDBE97600BE4056 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9AF832BDBE97600BE4056 /* MainViewController.swift */; };
 		CEC9AF872BDBE97600BE4056 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC9AF852BDBE97600BE4056 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49E12BAA2BDCA4CB004A5A52 /* Fraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fraction.swift; sourceTree = "<group>"; };
 		CEC9AF7C2BDBE97600BE4056 /* Galley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Galley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC9AF7F2BDBE97600BE4056 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC9AF832BDBE97600BE4056 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49E12BA72BDCA332004A5A52 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				49E12BAA2BDCA4CB004A5A52 /* Fraction.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		CEC9AF732BDBE97600BE4056 = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +84,7 @@
 		CEC9AF7E2BDBE97600BE4056 /* Galley */ = {
 			isa = PBXGroup;
 			children = (
+				49E12BA72BDCA332004A5A52 /* Helper */,
 				CEC9AF992BDBF2A400BE4056 /* Common */,
 				CEC9AF952BDBEEC000BE4056 /* Extension */,
 				CEC9AF8D2BDBE97700BE4056 /* Info.plist */,
@@ -229,6 +240,7 @@
 				CEC9AF972BDBEED500BE4056 /* UIView+.swift in Sources */,
 				CEC9AF842BDBE97600BE4056 /* MainViewController.swift in Sources */,
 				CEC9AF802BDBE97600BE4056 /* AppDelegate.swift in Sources */,
+				49E12BAB2BDCA4CB004A5A52 /* Fraction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

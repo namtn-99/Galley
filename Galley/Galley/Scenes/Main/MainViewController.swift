@@ -40,6 +40,14 @@ final class MainViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
         let device = UIDevice.current
         iOSVersionLabel.text = device.systemVersion
+        
+        resolutionLabel.text = "\(Int(screenWidth))x\(Int(screenHeight)) px"
+        refreshRateLabel.text = "\(String(describing: UIScreen.main.maximumFramesPerSecond)) Hz"
+    
+        var fraction = Fraction(numerator: Int(screenWidth), denominator: Int(screenHeight))
+        fraction.divide()
+        aspectRatioLabel.text = "\(fraction.numerator):\(fraction.denominator)"
+        
         getDeviceSize()
         getDeviceVersion()
     }
@@ -82,58 +90,139 @@ final class MainViewController: UIViewController {
             /*** iPhone ***/
         case .iPhone4:  
             deviceLabel.text = "iPhone 4"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 4")
         case .iPhone4S:
             deviceLabel.text = "iPhone 4S"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 4S")
         case .iPhone5:   
             deviceLabel.text = "iPhone 5"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 5")
         case .iPhone5C: 
             deviceLabel.text = "iPhone 5C"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 5C")
         case .iPhone5S: 
             deviceLabel.text = "iPhone 5S"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 5S")
         case .iPhone6:   
             deviceLabel.text = "iPhone 6"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 6")
         case .iPhone6S: 
             deviceLabel.text = "iPhone 6S"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 6S")
         case .iPhone6Plus: 
             deviceLabel.text = "iPhone 6 Plus"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 6 Plus")
         case .iPhone6SPlus: 
             deviceLabel.text = "iPhone 6S Plus"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 6 S Plus")
         case .iPhoneSE:   
             deviceLabel.text = "iPhone SE"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone SE")
         case .iPhone7:    
             deviceLabel.text = "iPhone 7"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 7")
         case .iPhone7Plus: 
             deviceLabel.text = "iPhone 7 Plus"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 7 Plus")
         case .iPhone8:  
             deviceLabel.text = "iPhone 8"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 8")
         case .iPhone8Plus: 
             deviceLabel.text = "iPhone 8 Plus"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone 8 Plus")
         case .iPhoneX:   
             deviceLabel.text = "iPhone X"
+            screenDestinyLabel.text = "458 PPI"
             print("It's an iPhone X")
         case .iPhoneXS:  
             deviceLabel.text = "iPhone Xs"
+            screenDestinyLabel.text = "458 PPI"
             print("It's an iPhone Xs")
         case .iPhoneXS_Max:
             deviceLabel.text = "iPhone Xs Max"
+            screenDestinyLabel.text = "458 PPI"
             print("It's an iPhone Xs Max")
         case .iPhoneXR:  
             deviceLabel.text = "iPhone Xr"
+            screenDestinyLabel.text = "326 PPI"
             print("It's an iPhone Xr")
+        case .iPhone11:
+            deviceLabel.text = "iPhone 11"
+            screenDestinyLabel.text = "326 PPI"
+        case .iPhone11Pro:
+            deviceLabel.text = "iPhone 11 Pro"
+            screenDestinyLabel.text = "458 PPI"
+        case .iPhone11Pro_Max:
+            deviceLabel.text = "iPhone 11 Pro Max"
+            screenDestinyLabel.text = "458 PPI"
+        case .iPhoneSE2:
+            deviceLabel.text = "iPhone SE 2nd gen"
+            screenDestinyLabel.text = "326 PPI"
+        case .iPhone12Mini:
+            deviceLabel.text = "iPhone 12 Mini"
+            screenDestinyLabel.text = "476 PPI"
+        case .iPhone12:
+            deviceLabel.text = "iPhone 12"
+            screenDestinyLabel.text = "460 PPI"
+        case .iPhone12Pro:
+            deviceLabel.text = "iPhone 12 Pro"
+            screenDestinyLabel.text = "460 PPI"
+        case .iPhone12Pro_Max:
+            deviceLabel.text = "iPhone 12 Pro Max"
+            screenDestinyLabel.text = "458 PPI"
+        case .iPhone13Mini:
+            deviceLabel.text = "iPhone 13 Mini"
+            screenDestinyLabel.text = "476 PPI"
+        case .iPhone13:
+            deviceLabel.text = "iPhone 13"
+            screenDestinyLabel.text = "460 PPI"
+        case .iPhone13Pro:
+            deviceLabel.text = "iPhone 13 Pro"
+            screenDestinyLabel.text = "460 PPI"
+        case .iPhone13Pro_Max:
+            deviceLabel.text = "iPhone 13 Pro Max"
+            screenDestinyLabel.text = "458 PPI"
+        case .iPhoneSE3:
+            deviceLabel.text = "iPhone SE 3rd gen"
+            screenDestinyLabel.text = "326 PPI"
+        case .iPhone14:
+            deviceLabel.text = "iPhone 14"
+            screenDestinyLabel.text = "460 PPI"
+        case .iPhone14Plus:
+            deviceLabel.text = "iPhone 14 Plus"
+            screenDestinyLabel.text = "458 PPI"
+        case .iPhone14Pro:
+            deviceLabel.text = "iPhone 14 Pro"
+            screenDestinyLabel.text = "460 PPI"
+        case .iPhone14Pro_Max:
+            deviceLabel.text = "iPhone 14 Pro Max"
+            screenDestinyLabel.text = "460 PPI"
+        case .iPhone15:
+            deviceLabel.text = "iPhone 15"
+            screenDestinyLabel.text = "460 PPI"
+        case .iPhone15Plus:
+            deviceLabel.text = "iPhone 15 Plus"
+            screenDestinyLabel.text = "460 PPI"
+        case .iPhone15Pro:
+            deviceLabel.text = "iPhone 15 Pro"
+            screenDestinyLabel.text = "460 PPI"
+        case .iPhone15Pro_Max:
+            deviceLabel.text = "iPhone 15 Pro Max"
+            screenDestinyLabel.text = "460 PPI"
             
             /*** iPad ***/
         case .iPad1:  
