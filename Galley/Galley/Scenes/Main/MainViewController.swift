@@ -68,7 +68,7 @@ final class MainViewController: UIViewController {
     
     
     @objc private func handleIntroductionTapped() {
-        let vc = IntroductionViewController.initiation()
+        let vc = IntroductionViewController.instantiate()
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -83,7 +83,8 @@ final class MainViewController: UIViewController {
     }
     
     @objc private func handleMSTestTapped() {
-        
+        let vc = MSTestViewController.instantiate()
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func getDeviceVersion() {

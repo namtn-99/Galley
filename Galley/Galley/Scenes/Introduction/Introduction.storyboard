@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -17,13 +17,13 @@
         <!--Introduction View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="IntroductionViewController" customModule="Galley" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IntroductionViewController" id="Y6W-OH-hqX" customClass="IntroductionViewController" customModule="Galley" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCL-kW-Rvp">
-                                <rect key="frame" x="167.66666666666666" y="734.33333333333337" width="58" height="51.666666666666629"/>
+                                <rect key="frame" x="167.66666666666666" y="735" width="58" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
@@ -42,11 +42,11 @@
 
 How to use:
 
-Make sure your screen is as clean as can be. If it is not, you might mistake dust or dirt for a dead pixel. To prepare your screen to be tested for dead pixels, grab a piece of soft cloth, preferably a high-density one. Then, gently and carefully rub every inch of your screen and make sure it is crystal clear.
+1. Make sure your screen is as clean as can be. If it is not, you might mistake dust or dirt for a dead pixel. To prepare your screen to be tested for dead pixels, grab a piece of soft cloth, preferably a high-density one. Then, gently and carefully rub every inch of your screen and make sure it is crystal clear.
 
-Click on the test-button to start testing your screen for dead pixels.
+2. Click on the test-button to start testing your screen for dead pixels.
 
-Click on the "Got it" button then you end up testing your display.</mutableString>
+3. Click on the "Got it" button then you end up testing your display.</mutableString>
                                 <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>

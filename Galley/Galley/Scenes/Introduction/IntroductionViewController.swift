@@ -21,10 +21,6 @@ final class IntroductionViewController: UIViewController {
     
 }
 
-extension IntroductionViewController {
-    static func initiation() -> UIViewController {
-        let storyboard = UIStoryboard(name: "Introduction", bundle: nil)
-        let vc = storyboard.instantiateInitialViewController()!
-        return vc
-    }
+extension IntroductionViewController: StoryboardSceneBased {
+    static var sceneStoryboard: UIStoryboard = UIStoryboard(name: "Introduction", bundle: nil)
 }
